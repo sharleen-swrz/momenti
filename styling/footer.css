@@ -1,0 +1,24 @@
+.footer{padding:36px 6vw 24px;display:flex;flex-direction:column;align-items:center;gap:18px}
+@font-face{font-family:Parisienne;src:url('../assets/parisienne.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+.footer-credit{width:100%;display:flex;align-items:center;justify-content:center;gap:9px;padding:14px 0 2px;color:var(--muted);order:5}
+.footer-credit>span{font-size:10px;letter-spacing:.5px}
+.beloved-logo{display:inline-flex;align-items:baseline;flex-shrink:0;white-space:nowrap;font-size:21px;font-weight:300;line-height:1;padding:4px 8px 8px 0;transform:scaleX(.96);transform-origin:center;color:var(--ink)}
+.beloved-initial{position:relative;z-index:1;font-family:Parisienne,'Segoe Script',cursive;font-style:normal;font-size:1.16em;font-weight:400;margin-right:-.025em;transform:translateY(.025em)}
+.beloved-word{font-family:Parisienne,'Segoe Script',cursive;font-weight:400;letter-spacing:.005em}
+.beloved-loved{margin-left:0;font-style:normal}
+.beloved-logo:hover{color:var(--accent)}
+
+.footer-credit>span{font-size:9px}
+
+.back-to-top{position:fixed;right:28px;bottom:28px;z-index:25;width:48px;height:48px;display:grid;place-items:center;border-radius:50%;border:1px solid var(--line);background:rgba(233,221,211,.9);color:var(--primary);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 4px 16px rgba(73,60,54,.08);transition:background .2s ease}
+.back-to-top:hover{background:var(--paper)}
+@media(max-width:700px){.footer{padding:30px 24px 22px}.back-to-top{right:18px;bottom:18px;width:44px;height:44px}}
+
+
+/* Grosses Logo-Wasserzeichen als ruhiger Seitenabschluss. */
+.footer{position:relative;min-height:440px;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;overflow:hidden;padding:38px 4vw 24px;isolation:isolate}
+.footer-credit{position:relative;z-index:2;width:auto;align-self:flex-start;justify-content:flex-start;margin-top:auto;padding:16px 0 0}
+.footer-watermark{position:absolute;right:-25px;bottom:-70px;width:min(67vw,800px);height:510px;pointer-events:none;z-index:-1;display:grid;place-items:center}
+.footer-watermark-branch{position:absolute;height:100%;width:auto;max-width:none;right:15%;bottom:0;opacity:.45;transform:rotate(-10deg)}
+.footer-watermark-word{position:relative;display:block;width:96%;height:auto;margin-top:30px;opacity:.3}
+@media(max-width:700px){.footer{min-height:340px;padding:24px 20px 20px}.footer-watermark{width:100vw;height:340px;right:-30px;bottom:0}.footer-watermark-branch{right:14%;opacity:.4}.footer-watermark-word{margin-top:20px;opacity:.28}.footer-credit{max-width:100%;padding-top:18px}}

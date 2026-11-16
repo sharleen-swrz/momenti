@@ -1,0 +1,30 @@
+{
+  "profil": "https://www.instagram.com/momenti.foto/",
+  "verwendete_bilder": [
+    {
+      "datei": "bannerIMG.jpg",
+      "herkunft": "Im lokalen Assets-Ordner bereitgestellt; nicht von Instagram heruntergeladen."
+    },
+    {
+      "datei": "pregnancyBannerIMG.jpg",
+      "herkunft": "Im lokalen Assets-Ordner bereitgestellt; nicht von Instagram heruntergeladen."
+    },
+    {
+      "datei": "EventBannerIMG.jpg",
+      "herkunft": "Im lokalen Assets-Ordner bereitgestellt; nicht von Instagram heruntergeladen."
+    },
+    {
+      "datei": "babybanner.jpg",
+      "herkunft": "Im lokalen Assets-Ordner bereitgestellt."
+    },
+    {
+      "datei": "familybanner.jpg",
+      "herkunft": "Im lokalen Assets-Ordner bereitgestellt."
+    },
+    {
+      "datei": "schwangerschaft.jpg",
+      "herkunft": "Im lokalen Assets-Ordner bereitgestellt."
+    }
+  ],
+  "hinweis": "Instagram-Beitragsbilder waren ohne Anmeldung nicht abrufbar. Die unbenutzten beispiel-*.jpg-Dateien sind vorläufig heruntergeladene Unsplash-Bilder und werden von der Website nicht geladen."
+}

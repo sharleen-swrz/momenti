@@ -1,0 +1,60 @@
+.category-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px 32px}.category-card{display:block}.category-card>img,.category-art{width:100%;height:440px;object-fit:cover}.category-card>img{transition:filter .3s}.category-card:hover>img{filter:brightness(1.05)}.category-caption{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:18px}.category-caption>span{font:32px var(--serif)}.category-caption small{font-size:11px;color:var(--muted)}.category-art{display:grid;place-items:center;background:var(--paper);color:var(--ink);position:relative;overflow:hidden}.category-art::before{content:'';position:absolute;width:230px;height:310px;border:1px solid var(--line);border-radius:50%;transform:rotate(20deg)}.category-art>span{font:54px/1.05 var(--serif);text-align:center;z-index:1}.category-art em{color:inherit}.category-art-familie{background:var(--paper);color:var(--ink)}.category-art-familie::before{border-color:var(--line);transform:rotate(-20deg)}.category-intro{display:grid;grid-template-columns:1fr 1.1fr;align-items:stretch;min-height:600px}.category-intro-copy{padding:95px 6vw;background:var(--paper);display:flex;flex-direction:column;justify-content:center;align-items:start}.category-intro h1{font-size:clamp(40px,4.5vw,72px);line-height:1.1;letter-spacing:-2px;overflow-wrap:anywhere}.category-tagline{font:italic 26px var(--serif);margin:20px 0}.category-intro-copy>p:not(.eyebrow):not(.category-tagline){max-width:430px;color:var(--muted)}.category-intro .button{margin-top:30px}.category-intro-image img,.category-intro-image .category-art{width:100%;height:100%;min-height:600px;object-fit:cover}.more-categories nav{display:flex;flex-wrap:wrap;gap:24px 44px;margin-top:36px;font:26px var(--serif)}.more-categories nav a:hover{color:var(--accent)}@media(max-width:700px){.category-grid{gap:34px 18px}.category-card>img,.category-art{height:280px}.category-caption{display:block}.category-caption>span{font-size:25px}.category-caption small{display:block;margin-top:5px;font-size:10px}.category-art>span{font-size:38px}.category-art::before{width:140px;height:210px}.category-intro{grid-template-columns:1fr}.category-intro-copy{padding:55px 24px}.category-intro-image img,.category-intro-image .category-art{min-height:0;height:420px}.category-intro h1{font-size:44px}}@media(max-width:420px){.category-grid{grid-template-columns:1fr}.category-card>img,.category-art{height:360px}}
+
+.category-grid{gap:32px}
+.category-card{border-radius:28px;overflow:hidden;background:var(--paper);border:1px solid var(--line);box-shadow:0 8px 28px rgba(167,70,50,.06);transition:transform .25s,box-shadow .25s}
+.category-card:hover{transform:translateY(-5px);box-shadow:0 14px 36px rgba(167,70,50,.12)}
+.category-card>img,.category-card>.category-art{height:380px}
+.category-caption{display:block;padding:24px 28px 28px;color:var(--primary);text-align:center}
+.category-caption>span{font:32px/1.2 var(--serif)}
+.category-art{background:var(--paper);color:var(--ink)}
+.category-art::before{border-color:var(--line)}
+.category-art-familie{background:var(--paper);color:var(--ink)}
+.category-art-familie::before{border-color:var(--line)}
+.category-intro-copy>p:not(.eyebrow):not(.category-tagline){margin-top:26px}
+@media(max-width:700px){.category-grid{gap:22px 18px}.category-card{border-radius:22px}.category-card>img,.category-card>.category-art{height:260px}.category-caption{padding:20px 10px}.category-caption>span{font-size:clamp(18px,3.4vw,25px)}}
+@media(max-width:420px){.category-card>img,.category-card>.category-art{height:320px}.category-caption>span{font-size:28px}}
+
+.category-card{position:relative;box-shadow:none;isolation:isolate}
+.category-card>img,.category-card>.category-art{transition:transform .5s ease}
+.category-card:hover>img{filter:none}
+.category-card:hover>img,.category-card:focus-visible>img{transform:scale(1.035)}
+.category-caption{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(233,221,211,.82);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);opacity:0;transition:opacity .3s ease;z-index:2}
+.category-caption>span{font-size:clamp(30px,3.8vw,54px);font-weight:350;line-height:1.1;letter-spacing:-.02em;overflow-wrap:anywhere}
+.category-card:hover .category-caption,.category-card:focus-visible .category-caption{opacity:1}
+@media(hover:none),(pointer:coarse){.category-caption{opacity:1;inset:auto 0 0;padding:20px;background:rgba(233,221,211,.9)}.category-caption>span{font-size:30px}}
+
+/* Kategorie-Einstieg: Foto über den ganzen Bildschirm, Text danach. */
+.category-photo-page main{padding-top:0}
+.category-photo-page .category-intro{display:flex;flex-direction:column;min-height:0}
+.category-photo-page .category-intro-image{order:-1;width:100%;height:100vh;height:100svh;position:relative;background:var(--paper);overflow:hidden}
+.category-photo-page .category-intro-image img{display:block;width:100%;height:100%;min-height:0;object-fit:cover;object-position:center}
+.category-photo-page .category-intro-image .category-art{width:100%;height:100%;min-height:0}
+.category-photo-page .category-intro-image .category-art>span{font-size:clamp(72px,12vw,160px)}
+.category-photo-page .category-intro-image .category-art::before{width:clamp(200px,30vw,400px);height:clamp(300px,45vw,600px)}
+.category-photo-page .category-intro-copy{display:flex;align-items:center;text-align:center;padding:75px 24px 80px;background:var(--paper)}
+.category-photo-page .category-intro-copy>p:not(.eyebrow):not(.category-tagline){max-width:620px}
+@media(max-width:700px){.category-photo-page main{padding-top:0}.category-photo-page .category-intro-copy{padding:50px 24px 60px}.category-photo-page .category-intro-image img{height:100%;min-height:0}.category-photo-page .category-intro-image .category-art{height:100%;min-height:0}}
+
+/* Schwangerschaft: Fokus auf Arme, Hände und Bauch statt auf die Hüfte. */
+.category-photo-page .category-intro-image img[src="assets/pregnancyBannerIMG.jpg"]{object-position:center 20%}
+
+/* Ruhige Kategorien: kein Anheben, kein Zoom, kein flächiger Blur. */
+.category-card,.category-card:hover{transform:none;box-shadow:none;transition:none}
+.category-card>img,.category-card>.category-art,.category-card:hover>img,.category-card:focus-visible>img{transform:none;filter:none;transition:none}
+.category-caption{inset:auto 0 0;min-height:88px;padding:22px 24px;justify-content:flex-start;text-align:left;background:rgba(233,221,211,.7);backdrop-filter:none;-webkit-backdrop-filter:none;transition:opacity .2s ease}
+.category-caption>span{font-size:clamp(27px,2.7vw,38px);font-weight:400}
+@media(hover:none),(pointer:coarse){.category-caption{background:rgba(233,221,211,.7);padding:20px;min-height:76px}.category-caption>span{font-size:28px}}
+
+.category-photo-page .category-intro-image img[src="assets/familybanner.jpg"]{object-position:center top}
+.category-photo-page .category-intro-image img[src="assets/babybanner.jpg"]{object-position:60% center}
+
+.category-photo-page .category-intro-image img[src="assets/schwangerschaft.jpg"]{object-position:62% top}
+.category-card>img[src="assets/schwangerschaft.jpg"],.shooting-preview>img[src="assets/schwangerschaft.jpg"]{object-position:62% 30%}
+
+@media(max-width:800px){.category-card .category-caption{opacity:1;inset:auto 0 0;padding:18px 20px;min-height:74px}.category-card .category-caption>span{font-size:clamp(24px,4vw,32px)}}
+
+/* Zentrierte, grössere Shooting-Titel auf den Startseiten-Kacheln. */
+.category-card .category-caption{justify-content:center;text-align:center;min-height:106px;padding:24px 16px}
+.category-card .category-caption>span{font-size:clamp(30px,3.2vw,46px);line-height:1.1;max-width:100%;overflow-wrap:anywhere;hyphens:auto}
+@media(max-width:800px){.category-card .category-caption{min-height:94px;padding:22px 12px}.category-card .category-caption>span{font-size:clamp(25px,4.2vw,34px)}}
+@media(max-width:420px){.category-card .category-caption>span{font-size:32px}}
